@@ -1,8 +1,5 @@
 import csv
-
-# Định tên các trường dữ liệu
-# field_names = ['Name', 'Age', 'Email']
-# Tạo số nguyên ngẫu nhiên trong khoảng từ 1 đến 10
+import datetime
 import random
 import string
 
@@ -16,10 +13,30 @@ random_suffix = ''.join(random.choices(string.digits, k=length))
 
 # Ghép chuỗi cố định và chuỗi ngẫu nhiên
 result = fixed_prefix + random_suffix
+random_suffix2  = ''.join(random.choices(string.digits, k=length))
 
+# Ghép chuỗi cố định và chuỗi ngẫu nhiên
+result2 = fixed_prefix + random_suffix2
 print(result)
+print(result2)
 
 
+#GETDate
+# Lấy ngày hiện tại
+current_date = datetime.date.today()
+# Khoảng thời gian bạn muốn cộng (ở đây là 1 ngày)
+delta = datetime.timedelta(days=6 *365)
+
+# Cộng ngày hiện tại với khoảng thời gian
+new_date = current_date + delta
+
+# Hiển thị kết quả
+print(new_date)
+# Chuyển đổi định dạng ngày
+formatted_date = new_date.strftime("%d/%m/%Y")
+
+# Hiển thị ngày
+print(formatted_date)
 
 
 # Dữ liệu các hàng
