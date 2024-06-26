@@ -25,7 +25,7 @@ new_date = current_date + delta
 date =current_date.strftime("%d%m%Y")
 formatted_date = new_date.strftime("%d/%m/%Y")
 # Mặc định prefix=date
-fixed_prefix = date_now.strftime("%Y%H%M%S")
+fixed_prefix = date_now.strftime("%Y%d%m%H%M%S")
 
 
 length= int(seri_length) - len(fixed_prefix)
