@@ -70,7 +70,7 @@ for i in range(0, int(number)):
 # print(children_array)
 
 
-filename = f"C:/Users/Admin/Documents/IMEDIA/Automation_Testing_API/importCardInWarehouse/cypress/fixtures./{provider}_{amount}_{date}_1.csv"
+filename = f"C:/Users/Admin/Documents/IMEDIA/Automation_Testing_API/AutoPAYMENT/cypress/fixtures/{provider}_{amount}_{date}_1.csv"
 # Mở file CSV và ghi dữ liệu vào
 with open(filename, mode='w', newline='') as file:
     writer = csv.writer(file)
